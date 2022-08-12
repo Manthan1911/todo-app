@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    --color-black: rgb(39, 36, 36);
+    --color-white: white;
+}
+
+[data-theme="dark"] {
+    --bg-color: hsla(235, 21%, 11%, 0.65);
+    --font-color: white;
+    --background-url: url('./images/night.jpg');
+}
+
+[data-theme="light"] {
+    --bg-color: rgba(255, 255, 255, 0.7);
+    --font-color: hsl(235, 21%, 11%);
+    --background-url: url('./images/day.jpg');
+    ;
+}
+
+
+body {
+    color: var(--font-color);
+    background-image: var(--background-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.glass {
+    background: var(--bg-color);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 2px rgb(0 0 0 / 50%);
+}
+
+input::placeholder {
+    text-align: center;
+    color: var(--font-color);
+}
+
+.output_inputBox {
+    padding: 1rem;
+    width: 100%;
+}
+
+.output_inputBox:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.black-bg {
+    background-color: var(--color-black);
+}
+
+.b-black {
+    border: 5px solid yellow;
+}
+
+.txt-white {
+    color: white;
+}
+
+.txt-blk {
+    color: black;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+    width: 40%;
+}
+
+.vh-full {
+    height: 60vh;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mt-10 {
+    margin-top: 6.5rem;
+}
+
+.m-btm {
+    margin-bottom: 1.3rem;
+}
+
+.m-tp {
+    margin-top: .4rem;
+}
+
+.padd-10 {
+    padding: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-cntr {
+    justify-content: center;
+}
+
+.z-min {
+    z-index: -1;
+}
+
+.p-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.brdr-radius {
+    border-radius: .4rem;
+}
+
+.bg-none {
+    background-color: transparent;
+    border: none;
+}
+
+.brdr-y {
+    border-bottom: 1px solid black;
+}
+
+/*  theme */
+.icon {
+    fill: var(--font-color);
+    height: 1rem;
+    width: 1rem;
+}
+
+.icon--theme {
+    height: 2rem;
+    width: 2rem;
+}
+
+.f-color {
+    color: var(--font-color);
+}
+
+.bg-color {
+    background-color: var(--bg-color);
+    outline: none;
+    border: none;
+    color: var(--font-color);
+}
+
+.filter--btn:hover {
+    font-weight: bold;
+}
+
+.txt-lt {
+    text-decoration: line-through;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <title>Todo app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.min.css">
+</head>
+
+<body class="vh-full black-bg">
+
+  <!-- todo  -->
+  <section class="m-auto w-half">
+
+    <!-- todo_title_section -->
+    <div class="w-full d-flex ai-cntr jc-sb m-btm  mt-10 glass padd-10">
+      <h1 class="txt-blk m-tp f-color"><span>TODO</span></h1>
+      <button id="theme-btn" class="bg-none" onclick="change()">
+        <svg class="icon icon--theme">
+          <use xlink:href="./images/defs.svg#icon-sun"></use>
+        </svg>
+      </button>
+    </div>
+
+    <!-- todo_main_section -->
+    <main>
+      <div class="glass m-tp">
+
+        <!-- <p>No ToDo to display</p> -->
+
+        <form id="todo-form">
+          <input class="padd-10 w-full brdr-rd brdr-radius bg-color" id="form__todo-text" type="text"
+            placeholder="Create a new todo..." tabindex="1" />
+        </form>
+        <div id="todo-list-display">
+
+        </div>
+        <div id="todo-footer" class="d-flex jc-sb padd-10">
+          <div>
+            <span id="availableTodosCount"></span>
+            available todos
+          </div>
+          <div class="d-flex" style="gap: 15px; ">
+            <button class="bg-none filter--btn f-color">All</button>
+            <button class="bg-none filter--btn f-color">Active</button>
+            <button class="bg-none filter--btn f-color">Completed</button>
+          </div>
+          <button class="bg-none filter--btn f-color">Clear Completed</button>
+        </div>
+      </div>
+    </main>
+
+  </section>
+
+  <!-- js file for todo -->
+  <script src="./script.min.js" defer></script>
+</body>
+
+</html>
